@@ -13,6 +13,9 @@ jQuery(document).ready(function() {
                 jQuery('#show_upload_message').text(response.message).css({
                     color: "green"
                 });
+
+                // jQuery('#form-csv-upload')[0].reset();
+                jQuery('#form-csv-upload').trigger("reset");
             }
         });
     });
